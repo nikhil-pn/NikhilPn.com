@@ -14,7 +14,7 @@ const Freelance = () => {
                 id="hireme"
                 className="w-full md:py-[20px] bg-black"
             >
-                <section className="px-4 md:px-16">
+                <section className="px-8 md:px-16">
 
                     <Div className="my-8 relative">
                         <div className="flex text-center  justify-center gap-2 md:gap-0 md:flex-col text-[20px] md:text-[45px] 2xl:text-[60px] leading-[20px] md:leading-[40px] 2xl:leading-[60px] font-oswald mb-10 text-[#f6f6f6]">

@@ -27,7 +27,7 @@ const Projects = () => {
             className="w-full  md:py-[20px] bg-black  relative overflow-hidden"
         >
             {/* <Wrapper2> */}
-            <section className="px-16">
+            <section className="md:px-16 px-8">
 
                 {/* SECTION HEADING START */}
                 <Div className="mt-8 mb-10 relative">

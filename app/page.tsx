@@ -16,7 +16,8 @@ export default function Home() {
 
   return (
     <>
-      <div className="bg-black h-screen">
+    {/* centering classes justify-center flex flex-col  md:flex-row md:block */}
+      <div className="bg-black h-screen ">
         <div className="relative isolate px-6 pt-20 lg:px-8">
           <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
             <div
@@ -46,12 +47,12 @@ export default function Home() {
             quantity={100}
           />
 
-          <div className="mx-auto   ">
-            <h1 className="z-10 text-center text-2xl animate-fade-in pt-8   text-zinc-200  font-display sm:text-6xl md:text-8xl mt-2  font-bold tracking-tight  md:text-center  ">
+          <div className="mx-auto  ">
+            <h1 className="z-10 text-center  animate-fade-in pt-8   text-zinc-200  font-display text-5xl md:text-8xl mt-2  font-bold tracking-tight  md:text-center  ">
               FullStack BlockChain <br></br>Developer
             </h1>
 
-            <div className="my-16 text-center animate-fade-in">
+            <div className="md:my-16 my-24   text-center animate-fade-in">
               <h2 className="text-sm text-zinc-500 ">
                 Hi, my name is Nikhil Pn, I'm building an Ecommerce Application where you can buy Web/Blockchain Apps at {""}
                 <Link

@@ -31,7 +31,7 @@ const About = () => {
                         </p>
 
                     </div>
-                    <div className="px-8 pt-6">
+                    <div className=" pt-6">
 
                         <CallToAction
                             icon={<AiOutlineCloudDownload />}

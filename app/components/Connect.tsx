@@ -30,7 +30,7 @@ const Connect = () => {
                 </div>
             </Div>
 
-            <Link href="https://instagram.com/h3liosdesign" target="_blank">
+            <Link className="pb-8" href="https://instagram.com/h3liosdesign" target="_blank">
                 <Image
                     alt="connect with nikhil pn social media instagram"
                     width="1700"
