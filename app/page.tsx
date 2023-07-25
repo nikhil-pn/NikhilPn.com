@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import Particles from './components/particles'
+import Space from './components/Space';
 
 
 const navigation = [
@@ -44,6 +45,7 @@ export default function Home() {
             className="absolute  inset-0 -z-10 animate-fade-in"
             quantity={100}
           />
+          
           <div className="mx-auto   ">
             <h1 className="z-10 text-center text-2xl animate-fade-in pt-8   text-zinc-200  font-display sm:text-6xl md:text-8xl mt-2  font-bold tracking-tight  md:text-center  ">
               FullStack BlockChain <br></br>Developer

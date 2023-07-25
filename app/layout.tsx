@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Space from './components/Space'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +17,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div
+          className={`text-[8px]  fixed z-50 items-center gap-[6px]  top-8  right-8  `}
+        >
+          <Space></Space>
+        </div>
+        {children}
+      </body>
     </html>
   )
 }
