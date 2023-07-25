@@ -42,6 +42,9 @@ export const metadata: Metadata = {
   twitter: {
     title: "Nikhil PN",
     card: "summary_large_image",
+    description: "FullStack Blockchain Developer at H3lios.in",
+    images: "https://nikhilpn.com/android-chrome-512x512.png",
+    creator: "@NikhilETH",
   },
   icons: {
     shortcut: "/favicon.png",
