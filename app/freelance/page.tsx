@@ -22,7 +22,7 @@ const Freelance = () => {
                                 HIRE ME
                             </h2>
                         </div>
-                        <div className="text-[16px] pb-8 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] text-# text-start mx-auto ">
+                        <div className="text-[16px] pb-8 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] text-# text-center mx-auto ">
                             <p>
                                 In 2019&#44; I ventured into freelancing&#44; exploring new
                                 opportunities and broadening my horizons. If you&#39;re interested in

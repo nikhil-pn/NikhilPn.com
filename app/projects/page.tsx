@@ -36,7 +36,7 @@ const Projects = () => {
                             Projects
                         </h2>
                     </div>
-                    <div className="text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] text-# text-center max-w-[1200px] mx-auto">
+                    <div className="text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] text-# text-center  mx-auto">
                         I take great pleasure in developing cutting-edge real-life
                         applications across various categories. Feel free to explore my
                         portfolio, categorized into frontend, backend, Android apps, and

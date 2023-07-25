@@ -25,34 +25,11 @@ const About = () => {
                             THE VOYAGE OF NIKHIL PN
                         </h2>
                     </div>
-                    <div className="text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] text-# text-start mx-auto ">
+                    <div className="text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] text-# text-center mx-auto ">
                         <p className="mb-2">
-                            {/* I&#34;m Nikhil Pn, a Fullstack BlockChain developer based in Kochi, India. With a
-                            passion for Technology and Entrepreneurship! In 2017, I
-                            established a prominent brand on YouTube called &quot;Ntec Phones&quot;
-                            which boasts an impressive subscriber base of over 32,000 and an
-                            astounding total of 6 million plus views.Through this platform, I
-                            have leveraged my expertise and knowledge in smartphones to engage
-                            with a diverse audience. */}
-
-                            add info about me only skip ntec
+                            Hello there! I am an enthusiastic FullStack Blockchain developer based in Kochi, India. My forte lies in developing robust web and Android applications, along with creating smart contracts on the Solana blockchain. My proficiency extends to several programming languages, including JavaScript, TypeScript, Python, and Rust.
                         </p>
-                        {/* <p className="mb-2">
-                            I have guided individuals in selecting top-notch smartphones and
-                            established partnerships with renowned sponsors like Xiaomi,
-                            Alibaba, and Gearbest.com to offer these products through my
-                            platform. Additionally, I have ventured into affiliate marketing
-                            on Flipkart and Amazon to enhance revenue generation other than
-                            Youtube ad revenue.
-                        </p> */}
-                        {/* <p>
-                            I have guided individuals in selecting top-notch smartphones and
-                            established partnerships with renowned sponsors like Xiaomi,
-                            Alibaba, and Gearbest.com to offer these products through my
-                            platform. Additionally, I have ventured into affiliate marketing
-                            on Flipkart and Amazon to enhance revenue generation other than
-                            Youtube ad revenue.
-                        </p> */}
+
                     </div>
                     <div className="px-8 pt-6">
 
