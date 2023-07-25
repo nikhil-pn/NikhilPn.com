@@ -1,13 +1,9 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import Particles from './components/particles'
-import Space from './components/Space';
-
 
 const navigation = [
   { name: "Projects", href: "/projects" },
   { name: "About Me", href: "/about" },
-  // { name: "Hire Me", href: "/contact" },
   { name: "Freelance", href: "/freelance" },
 ];
 
