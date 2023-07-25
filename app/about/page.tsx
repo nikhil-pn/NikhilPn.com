@@ -17,9 +17,9 @@ const About = () => {
             id="About"
             className="w-full  md:py-[20px] bg-black"
         >
-            <section className="px-16">
+            <section className="px-8 md:px-16">
 
-                <Div className=" mt-10  ">
+                <Div className=" mt-8  ">
                     <div className="flex text-center  justify-center gap-2 md:gap-0 md:flex-col text-[20px] md:text-[45px] 2xl:text-[60px] leading-[20px] md:leading-[40px] 2xl:leading-[60px] font-oswald mb-10 text-[#f6f6f6]">
                         <h2 className=" text-center text-2xl  pt-8   text-zinc-200  font-display sm:text-6xl md:text-5xl mt-2  font-bold tracking-tight  md:text-center  ">
                             THE VOYAGE OF NIKHIL PN
@@ -54,13 +54,13 @@ const About = () => {
                             Youtube ad revenue.
                         </p> */}
                     </div>
-                <div className="px-8 pt-6">
+                    <div className="px-8 pt-6">
 
-                    <CallToAction
-                        icon={<AiOutlineCloudDownload />}
-                        action={() => window.open("../download/nikhilpncv.pdf")}
-                    ></CallToAction>
-                </div>
+                        <CallToAction
+                            icon={<AiOutlineCloudDownload />}
+                            action={() => window.open("../download/nikhilpncv.pdf")}
+                        ></CallToAction>
+                    </div>
                 </Div>
 
                 <Skills></Skills>

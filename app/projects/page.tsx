@@ -30,7 +30,7 @@ const Projects = () => {
             <section className="px-16">
 
                 {/* SECTION HEADING START */}
-                <Div className="mt-10 mb-10 relative">
+                <Div className="mt-8 mb-10 relative">
                     <div className="flex text-center  justify-center gap-2 md:gap-0 md:flex-col text-[20px] md:text-[45px] 2xl:text-[60px] leading-[20px] md:leading-[40px] 2xl:leading-[60px] font-oswald uppercase mb-10 text-[#f6f6f6]">
                         <h2 className=" text-center text-2xl  pt-8   text-zinc-200  font-display sm:text-6xl md:text-5xl mt-2  font-bold tracking-tight  md:text-center  ">
                             Projects
