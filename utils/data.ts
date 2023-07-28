@@ -1,9 +1,4 @@
 import h3lios from "../public/assets/project9.webp";
-import p2 from "../public/assets/project-2.png";
-import p3 from "../public/assets/project-3.png";
-import p4 from "../public/assets/project-4.png";
-import p5 from "../public/assets/project-5.png";
-import p6 from "../public/assets/project-6.png";
 import bookswap from "../public/assets/bookswap.png";
 import nikhilpn from "../public/assets/nikhilpn-com.png";
 import cloudshare from "../public/assets/cloudshare.png";
@@ -16,6 +11,10 @@ import portfolio2023 from "../public/assets/website.png";
 import netflix from "../public/assets/netflix.png";
 import ecommerce from "../public/assets/ecommerce.png";
 import weather from "../public/assets/weather.png";
+import chatsocket from "../public/assets/chatsocket.png";
+import registration from "../public/assets/registeration.png";
+import notice from "../public/assets/notice.png";
+import spotifybackend from "../public/assets/spotifybackend.png";
 
 export const filters = [
   {
@@ -132,19 +131,36 @@ export const projects = [
     github: "https://github.com/nikhil-pn/Weather-App-Javascript",
     link: "https://weather-now-nikhil-pn.netlify.app/",
   },
+  {
+    name: "Chat Room | Node Socket.io",
+    image: chatsocket,
+    tags: ["backend"],
+    github: "https://github.com/nikhil-pn/chatroom-socket.io",
+    link: "https://www.youtube.com/watch?v=Eo6-cnZjIM8&ab_channel=H3liosDesign",
+  },
+  {
+    name: "SignUp/In | Node ",
+    image: registration,
+    tags: ["backend"],
+    github: "https://github.com/nikhil-pn/Backend-Authentication-With-DataBase",
+    link: "https://signup-signin.onrender.com/",
+  },
+  {
+    name: "Notice Board API | Node ",
+    image: notice,
+    tags: ["backend"],
+    github: "https://github.com/nikhil-pn/Notice-Board-API/",
+    link: "https://notice-board-eg67.onrender.com/api/notice",
+  },
+  {
+    name: "Spotify Backend API | Node ",
+    image: spotifybackend,
+    tags: ["backend"],
+    github: "https://github.com/nikhil-pn/hackathon-backend/",
+    link: "https://hackathon-spotify-backend-nikhilpn.onrender.com/api/songs",
+  },
   
-  // {
-  //   name: "H3lios.in Ecommerce for Fullstack Apps",
-  //   image: p1,
-  //   tags: ["frontend"],
-  //   link: "http://h3lios.in",
-  // },
-  // {
-  //   name: "H3lios.in Ecommerce for Fullstack Apps",
-  //   image: p1,
-  //   tags: ["top"],
-  //   link: "http://h3lios.in",
-  // },
+ 
 ];
 
 export const achievements = [
