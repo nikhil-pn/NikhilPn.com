@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Space from './components/Space'
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
     default: "nikhilpn.com",
     template: "%s | nikhilpn.com",
   },
+
   description: "FullStack Blockchain Developer at H3lios.in",
   openGraph: {
     title: "nikhilpn.com",
@@ -47,7 +49,8 @@ export const metadata: Metadata = {
     creator: "@NikhilETH",
   },
   icons: {
-    shortcut: "/favicon.png",
+    shortcut: "favicon.png",
+
   },
 };
 
