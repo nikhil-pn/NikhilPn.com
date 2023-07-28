@@ -13,7 +13,7 @@ const Projects = () => {
     const [selectedTag, setSelectedTag] = useState("top");
     const [projectData, setProjectData] = useState(projects.filter((p) => p.tags.includes("top")));
 
-    const filterHandler = (tag) => {
+    const filterHandler = (tag:any) => {
         setSelectedTag(tag);
         let filteredProjects = [];
         if (tag === "top") {

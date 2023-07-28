@@ -8,7 +8,7 @@ const Form = () => {
   const [userInput, setUserInput] = useState({});
   const [loading, setLoading] = useState(false);
 
-  const formSubmitHandler = (e) => {
+  const formSubmitHandler = (e: any) => {
     e.preventDefault();
     setLoading(true);
 
@@ -46,10 +46,15 @@ const Form = () => {
     );
 
     // Resetting Form
-    document.getElementById("queryForm").reset();
+    // Assuming "queryForm" is the ID of your form element
+    const queryForm = document.getElementById("queryForm") as HTMLFormElement;
+    if (queryForm) {
+      queryForm.reset();
+    }
+
   };
 
-  const onChange = (e) => {
+  const onChange = (e: any) => {
     let obj = { ...userInput, [e.target.name]: e.target.value };
     setUserInput(obj);
   };

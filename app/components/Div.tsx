@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const Div = ({ children, ...props }) => {
+const Div = ({ children, ...props }:any) => {
     return (
         <motion.div
             initial={{ y: 50, opacity: 0 }}

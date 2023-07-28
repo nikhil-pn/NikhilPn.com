@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     creator: "@NikhilETH",
   },
   icons: {
-    shortcut: "favicon.png",
+    shortcut: "favicon.ico",
 
   },
 };
