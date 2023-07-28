@@ -15,6 +15,7 @@ import chatsocket from "../public/assets/chatsocket.png";
 import registration from "../public/assets/registeration.png";
 import notice from "../public/assets/notice.png";
 import spotifybackend from "../public/assets/spotifybackend.png";
+import movie from "../public/assets/movie.png";
 
 export const filters = [
   {
@@ -158,6 +159,13 @@ export const projects = [
     tags: ["backend"],
     github: "https://github.com/nikhil-pn/hackathon-backend/",
     link: "https://hackathon-spotify-backend-nikhilpn.onrender.com/api/songs",
+  },
+  {
+    name: "Movie Review | Solana ",
+    image: movie,
+    tags: ["blockchain"],
+    github: "https://github.com/nikhil-pn/Solana-Serialization/",
+    link: "https://youtu.be/WyrpDf-0biQ",
   },
   
  
