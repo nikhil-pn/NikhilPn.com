@@ -25,7 +25,7 @@ const About = () => {
                             THE VOYAGE OF NIKHIL PN
                         </h2>
                     </div>
-                    <div className="text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] text-# text-center mx-auto ">
+                    <div className="text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px]  text-start md:text-center mx-auto ">
                         <p className="mb-2">
                             Hello there! I am an enthusiastic FullStack Blockchain developer based in Kochi, India. My forte lies in developing robust web and Android applications, along with creating smart contracts on the Solana blockchain. My proficiency extends to several programming languages, including JavaScript, TypeScript, Python, and Rust.
                         </p>

@@ -1,99 +1,173 @@
-import p1 from "../public/assets/project9.webp";
+import h3lios from "../public/assets/project9.webp";
 import p2 from "../public/assets/project-2.png";
 import p3 from "../public/assets/project-3.png";
 import p4 from "../public/assets/project-4.png";
 import p5 from "../public/assets/project-5.png";
 import p6 from "../public/assets/project-6.png";
+import bookswap from "../public/assets/bookswap.png";
+import nikhilpn from "../public/assets/nikhilpn-com.png";
+import cloudshare from "../public/assets/cloudshare.png";
+import newsletter from "../public/assets/newsletter.png";
+import spotify from "../public/assets/spotify.png";
+import urlShortner from "../public/assets/url.png";
+import floating from "../public/assets/floatinghome.png";
+import producthouse from "../public/assets/producthouse.png";
+import portfolio2023 from "../public/assets/website.png";
+import netflix from "../public/assets/netflix.png";
+import ecommerce from "../public/assets/ecommerce.png";
+import weather from "../public/assets/weather.png";
 
 export const filters = [
-    {
-        name: "All",
-        id: "all",
-    },
-    {
-        name: "Frontend",
-        id: "frontend",
-    },
-    {
-        name: "Backend",
-        id: "backend",
-    },
-    {
-        name: "Android",
-        id: "backend",
-    },
-    {
-        name: "BlockChain",
-        id: "backend",
-    },
+  {
+    name: "Top",
+    id: "top",
+  },
+  {
+    name: "Frontend",
+    id: "frontend",
+  },
+  {
+    name: "Backend",
+    id: "backend",
+  },
+  {
+    name: "Android",
+    id: "android",
+  },
+  {
+    name: "BlockChain",
+    id: "blockchain",
+  },
 ];
 
 export const projects = [
-    {
-        name: "Join the Innovative Car Wash Service",
-        image: p1,
-        tags: ["dashboard", "mobile-app"],
-        link: "http://h3lios.in"
-    },
-    {
-        name: "Your Luggage is in Safe Hands",
-        image: p2,
-        tags: ["dashboard", "website"],
-        link: "http://h3lios.in"
-    },
-    {
-        name: "The Art of Hiring",
-        image: p3,
-        tags: ["mobile-app"],
-        link: "http://h3lios.in"
-    },
-    {
-        name: "We Are Solving Global Problems",
-        image: p4,
-        tags: ["mobile-app"],
-        link: "http://h3lios.in"
-    },
-    {
-        name: "The English Tea Ceremony",
-        image: p5,
-        tags: ["website", "dashboard"],
-        link: "http://h3lios.in"
-    },
-    {
-        name: "Saving Photo Memories",
-        image: p6,
-        tags: ["website"],
-        link: "http://h3lios.in"
-    },
-    {
-        name: "H3lios.in Ecommerce for Fullstack Apps",
-        image: p1,
-        tags: ["frontend"],
-        link: "http://h3lios.in"
-    },
+  {
+    name: "BookSwap | Exchange Your Books",
+    image: bookswap,
+    tags: ["top", "frontend"],
+    link: "https://bookswap-colab.vercel.app",
+    github: "https://github.com/nikhil-pn/BookSwap",
+  },
+  {
+    name: "H3lios.in | Ecommerce Website",
+    image: h3lios,
+    tags: ["top", "frontend"],
+    link: "http://h3lios.in",
+    github: "https://github.com/nikhil-pn/h3lios.in",
+  },
+  {
+    name: "CloudShare | Node",
+    image: cloudshare,
+    tags: ["top", "backend"],
+    link: "http://cloudshare.onrender.com/",
+    github: "https://github.com/nikhil-pn/Cloud-Share",
+  },
+  {
+    name: "NikhilPn.com | Portfolio Website",
+    image: nikhilpn,
+    tags: ["top", "frontend"],
+    link: "http://nikhilpn.com",
+    github: "https://github.com/nikhil-pn/NikhilPn.com",
+  },
+  {
+    name: "NewsLetter | Waitlist Website ",
+    image: newsletter,
+    tags: ["top", "frontend"],
+    link: "https://h3lios-newsletter.vercel.app/",
+    github: "https://github.com/nikhil-pn/news-letter",
+  },
+  {
+    name: "Spotify | Vanilla JavaScript",
+    image: spotify,
+    tags: ["top", "frontend"],
+    link: "https://spotify-vanila-js.netlify.app/",
+    github: "https://github.com/nikhil-pn/Spotify-Clone-JS-Tailwind",
+  },
+  {
+    name: "URL Shortner | Node",
+    image: urlShortner,
+    tags: ["top", "backend"],
+    link: "https://url-shortner-sh3s.onrender.com/",
+    github: "https://github.com/nikhil-pn/URL-Shortner-Node",
+  },
+  {
+    name: "Floating Scooter | Android",
+    image: floating,
+    tags: ["top", "android"],
+    github: "https://github.com/nikhil-pn/FloatingScooter",
+    link: "https://www.youtube.com/shorts/-6y7DtuBcJ4",
+  },
+  {
+    name: "Product House | Android",
+    image: producthouse,
+    tags: ["top", "android"],
+    github: "https://github.com/nikhil-pn/producthouse",
+    link: "https://www.youtube.com/watch?v=p1AHYaB3hQ4&ab_channel=H3liosDesign",
+  },
+  {
+    name: "Single-Page Website | Next.js",
+    image: portfolio2023,
+    tags: ["frontend"],
+    github: "https://github.com/nikhil-pn/portfolio-2023-next.js",
+    link: "https://portfolio-2023-next-js.vercel.app/",
+  },
+  {
+    name: "NetFlix | TypeScript",
+    image: netflix,
+    tags: ["frontend"],
+    github: "https://github.com/nikhil-pn/Netflix-Typescript-React-Tailwind",
+    link: "https://netflix-autoplay-banner-page.netlify.app/",
+  },
+  {
+    name: "React Ecommerce | Redux",
+    image: ecommerce,
+    tags: ["frontend"],
+    github: "https://github.com/nikhil-pn/E-Commerce-Firebase-Redux-DN",
+    link: "https://e-commerce-nikhilpn.netlify.app/",
+  },
+  {
+    name: "Weather App | JavaScript",
+    image: weather,
+    tags: ["frontend"],
+    github: "https://github.com/nikhil-pn/Weather-App-Javascript",
+    link: "https://weather-now-nikhil-pn.netlify.app/",
+  },
+  
+  // {
+  //   name: "H3lios.in Ecommerce for Fullstack Apps",
+  //   image: p1,
+  //   tags: ["frontend"],
+  //   link: "http://h3lios.in",
+  // },
+  // {
+  //   name: "H3lios.in Ecommerce for Fullstack Apps",
+  //   image: p1,
+  //   tags: ["top"],
+  //   link: "http://h3lios.in",
+  // },
 ];
 
 export const achievements = [
-    {
-        id: 1,
-        year: 70,
-        description: "SUCCESSFULLY<br />COMPLETED<br />ORDERS",
-    },
-    {
-        id: 2,
-        year: 5,
-        description: "YEARS OF<br /> FREELANCE <br/> EXPERIENCE",
-    },
-    {
-        id: 3,
-        year: 50,
-        description: "Open <br/>source <br/>Projects",
-    },
-    {
-        id: 4,
-        year: 12,
-        description: "Thousand <br/>Istagram<br />Followers",
-    },
+  {
+    id: 1,
+    year: 70,
+    description: "SUCCESSFULLY<br />COMPLETED<br />ORDERS",
+  },
+  {
+    id: 2,
+    year: 5,
+    description: "YEARS OF<br /> FREELANCE <br/> EXPERIENCE",
+  },
+  {
+    id: 3,
+    year: 50,
+    description: "Open <br/>source <br/>Projects",
+  },
+  {
+    id: 4,
+    year: 12,
+    description: "Thousand <br/>Istagram<br />Followers",
+  },
 ];
 
 export const dataClient = [

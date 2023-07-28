@@ -22,7 +22,7 @@ const Freelance = () => {
                                 HIRE ME
                             </h2>
                         </div>
-                        <div className="text-[16px] pb-8 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] text-# text-center mx-auto ">
+                        <div className="text-[16px] pb-8 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] md:text-center text-start mx-auto ">
                             <p>
                                 In 2019&#44; I ventured into freelancing&#44; exploring new
                                 opportunities and broadening my horizons. If you&#39;re interested in
@@ -42,10 +42,10 @@ const Freelance = () => {
                         </div>
                         <Link target="_blank" href="https://www.h3lios.in">
                             <Image
-                                width="1400"
+                                width="1700"
                                 height="800"
                                 alt="h3liosdesign fiverr image "
-                                className="hover:scale-105 duration-200"
+                                className="hover:scale-105 duration-200 "
                                 src="/533shots_so.webp"
                             ></Image>
                         </Link>

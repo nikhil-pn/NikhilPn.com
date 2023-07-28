@@ -4,18 +4,20 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Div from "../components/Div";
 import { projects, filters } from "@/utils/data";
-import {AiOutlineGithub} from "react-icons/ai"
-import {TbWorldWww} from "react-icons/tb"
+import { AiOutlineGithub } from "react-icons/ai"
+import { CgLivePhoto } from "react-icons/cg"
+import Link from "next/link";
+import { it } from "node:test";
 
 const Projects = () => {
-    const [selectedTag, setSelectedTag] = useState("all");
-    const [projectData, setProjectData] = useState(projects);
+    const [selectedTag, setSelectedTag] = useState("top");
+    const [projectData, setProjectData] = useState(projects.filter((p) => p.tags.includes("top")));
 
     const filterHandler = (tag) => {
         setSelectedTag(tag);
         let filteredProjects = [];
-        if (tag === "all") {
-            filteredProjects = projects;
+        if (tag === "top") {
+            filteredProjects = projects.filter((p) => p.tags.includes(tag));
         } else {
             filteredProjects = projects.filter((p) => p.tags.includes(tag));
         }
@@ -36,7 +38,7 @@ const Projects = () => {
                             Projects
                         </h2>
                     </div>
-                    <div className="text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] text-# text-center  mx-auto">
+                    <div className="text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] md:text-center text-start  mx-auto">
                         I take great pleasure in developing cutting-edge real-life
                         applications across various categories. Feel free to explore my
                         portfolio, categorized into frontend, backend, Android apps, and
@@ -65,43 +67,47 @@ const Projects = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
                     {projectData.map((item, index) => {
                         return (
-                            <Div key={index} className="flex flex-col gap-4 cursor-pointer">
+                            <Div key={index} className="flex flex-col gap-4 ">
                                 <div className="bg-black  aspect-video overflow-hidden md:hover:scale-105 md:duration-200">
-                                    <a href="https://h3lios.in" target="_blank">
-                                        <Image
-                                            height="800"
-                                            width="1200"
-                                            alt="project images"
-                                            src={item.image.src}
-                                            className="transition-transform hover:-translate-y-[30%]  hover:duration-1000 ease-linear"
-                                        />
-                                    </a>
+                                    <Image
+                                        height="800"
+                                        width="1200"
+                                        alt="project images"
+                                        src={item.image.src}
+                                        className="transition-transform hover:-translate-y-[40%]  hover:duration-1000 ease-linear"
+                                    />
                                 </div>
-                                <a href={item.link} target="_blank">
+                                <div>
                                     <section className="flex justify-between px-2  items-center">
 
-                                        <div className="text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] hover:text-zinc-300  text-center">
-                                            H3lios.in
+                                        <div className="text-[12px] md:text-[16px] 2xl:text-[18px] leading-[24px] 2xl:leading-[32px] hover:text-zinc-300  text-center">
+                                            {item.name}
                                         </div>
                                         <div className=" flex flex-row gap-4 text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] hover:text-zinc-300  text-center">
-                                            
                                             <div>
-                                                <TbWorldWww></TbWorldWww>
+                                                {item.link && (
+                                                    <Link target="_blank" href={item.link} className="flex flex-row gap-1 hover:cursor-pointer hover:scale-105">
+                                                        <p className="md:text-sm text-xs text-blue-500">Live</p>
+                                                        <CgLivePhoto className="text-blue-500"></CgLivePhoto>
+                                                    </Link>
+                                                )}
                                             </div>
-                                            <div>
-                                                <AiOutlineGithub ></AiOutlineGithub>
+                                            <div className="hover:cursor-pointer hover:scale-105">
+                                                <a className="hover:text-white " href={item.github} target="_blank">
+                                                    <AiOutlineGithub ></AiOutlineGithub>
+                                                </a>
                                             </div>
                                         </div>
                                     </section>
-                                </a>
+                                </div>
                             </Div>
                         );
                     })}
                 </div>
                 {/* PROJECTS GRID END */}
-            </section>
+            </section >
             {/* </Wrapper2> */}
-        </div>
+        </div >
     );
 
 }

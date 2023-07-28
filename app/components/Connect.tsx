@@ -17,6 +17,9 @@ const Connect = () => {
                     We would love for you to connect with us on our social media handles
                     and stay up-to-date with the latest news and updates.
                     Follow us on
+                    <Link href="https://github.com/nikhil-pn" target="_blank">
+                        <span className="text-blue-500 cursor-pointer"> GitHub</span>
+                    </Link>{" "}
                     <Link href="https://instagram.com/h3liosdesign" target="_blank">
                         <span className="text-blue-500 cursor-pointer"> Instagram</span>
                     </Link>{" "}
