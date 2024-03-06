@@ -53,7 +53,7 @@ export default function Home() {
                 Hi, my name is Nikhil Pn, I'm building an Ecommerce Application where you can buy Web/Blockchain Apps at {""}
                 <Link
                   target="_blank"
-                  href="https://upstash.com"
+                  href="https://www.h3lios.in/"
                   className="underline duration-500 hover:text-zinc-300"
                 >
                   H3lios.in
