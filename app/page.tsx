@@ -50,7 +50,7 @@ export default function Home() {
 
             <div className="md:my-16 my-24   text-center animate-fade-in">
               <h2 className="text-sm text-zinc-500 ">
-                Hi, my name is Nikhil Pn, I'm building an Ecommerce Application where you can buy Web/Blockchain Apps at {""}
+                Hi, my name is Nikhil Pn, And im a twitter addict {""}
                 <Link
                   target="_blank"
                   href="https://www.h3lios.in/"
