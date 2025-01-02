@@ -14,7 +14,6 @@
     "@react-three/drei": "^9.109.2",
     "@react-three/fiber": "^8.16.8",
     "@tabler/icons-react": "^3.11.0",
-     "js-confetti": "^0.12.0",
     "@types/node": "20.2.1",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
@@ -22,6 +21,7 @@
     "contentlayer": "^0.3.0",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^10.12.12",
+    "js-confetti": "^0.12.0",
     "lucide-react": "^0.220.0",
     "markdown-wasm": "^1.2.0",
     "next": "13.4.3",
@@ -36,6 +36,7 @@
     "rehype-pretty-code": "^0.9.4",
     "rehype-slug": "^5.1.0",
     "remark-gfm": "^3.0.1",
+    "three": "^0.172.0",
     "typescript": "5.0.4"
   },
   "devDependencies": {

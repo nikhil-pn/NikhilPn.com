@@ -1,116 +1,80 @@
-import React, { useState, useEffect, useRef } from "react";
-import {
-    useGLTF,
-    Text,
-    Float,
-    MeshTransmissionMaterial,
-} from "@react-three/drei";
+import React, { useState, useEffect } from "react";
+import { Text } from "@react-three/drei";
 import { useThree } from "@react-three/fiber";
-import JSConfetti from "js-confetti";
-import { IconBrandX } from "@tabler/icons-react";
 
-const jsConfetti = new JSConfetti();
+type TimeLeft = {
+  days?: number;
+  hours?: number;
+  minutes?: number;
+  seconds?: number;
+};
 
-export default function Model() {
-    const { viewport } = useThree();
-    const { nodes } = useGLTF("/medias/shards.glb");
-    const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-    const jsConfettiRef = useRef(null);
+export default function Model(): JSX.Element {
+  const { viewport } = useThree();
+  const [timeLeft, setTimeLeft] = useState<TimeLeft>(calculateTimeLeft());
 
-    useEffect(() => {
-        jsConfettiRef.current = new JSConfetti();
-    }, []);
+  useEffect(() => {
+    let timer: NodeJS.Timeout;
 
-    useEffect(() => {
-        let timer;
-
-        if (timeLeft.days === undefined) {
-            // Check event start
-            if (jsConfettiRef.current) {
-                // jsConfettiRef.current.addConfetti(); // Trigger confetti
-            }
-        } else {
-            timer = setInterval(() => {
-                const newTimeLeft = calculateTimeLeft();
-                setTimeLeft(newTimeLeft);
-                if (newTimeLeft.days === undefined && jsConfettiRef.current) {
-                    jsConfettiRef.current.addConfetti(); // Trigger confetti when time runs out
-                }
-            }, 1000);
-        }
-
-        return () => clearInterval(timer);
-    }, [timeLeft]);
-
-    function calculateTimeLeft() {
-        const eventDate = new Date("2024-08-17T10:45:00"); // 10:00 AM on Aug 17, 2024
-        const now = new Date();
-        const difference = eventDate - now;
-        let timeLeft = {};
-
-        if (difference > 0) {
-            timeLeft = {
-                days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-                hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-                minutes: Math.floor((difference / 1000 / 60) % 60),
-                seconds: Math.floor((difference / 1000) % 60),
-            };
-        }
-
-        return timeLeft;
+    if (timeLeft.days === undefined) {
+      // Event has started
+      console.log("Send Resign Letter");
+    } else {
+      timer = setInterval(() => {
+        const newTimeLeft = calculateTimeLeft();
+        setTimeLeft(newTimeLeft);
+      }, 1000);
     }
 
-    return (
-        <group scale={viewport.width / 2}>
-            {nodes.Scene.children.map((mesh, i) => {
-                return <Mesh data={mesh} key={i} />;
-            })}
-            <Font timeLeft={timeLeft} />
-        </group>
-    );
+    return () => clearInterval(timer);
+  }, [timeLeft]);
+
+  function calculateTimeLeft(): TimeLeft {
+    const eventDate = new Date("2025-08-17T11:00:00"); // 11:00 AM on Aug 17, 2024
+    const now = new Date();
+    const difference = eventDate.getTime() - now.getTime();
+    let timeLeft: TimeLeft = {};
+
+    if (difference > 0) {
+      timeLeft = {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / (1000 * 60)) % 60),
+        seconds: Math.floor((difference / 1000) % 60),
+      };
+    }
+
+    return timeLeft;
+  }
+
+  return (
+    <group scale={viewport.width / 2}>
+      <Font timeLeft={timeLeft} />
+    </group>
+  );
 }
 
-function Font({ timeLeft }) {
-    const src = "/fonts/PPNeueMontreal-Bold.otf";
-    const textOption = {
-        color: "white",
-        anchorX: "center",
-        anchorY: "middle",
-    };
+function Font({ timeLeft }: { timeLeft: TimeLeft }): JSX.Element {
+  const src = "/fonts/PPNeueMontreal-Bold.otf";
+  const textOption = {
+    color: "white",
+    anchorX: "center" as const,
+    anchorY: "middle" as const,
+  };
 
-    const timerText =
-        timeLeft.days !== undefined
-            ? `${timeLeft.days}D ${timeLeft.hours}h ${timeLeft.minutes}m ${timeLeft.seconds}s`
-            : "W3K is Live!";
+  const timerText =
+    timeLeft.days !== undefined
+      ? `${timeLeft.days}D ${timeLeft.hours}h ${timeLeft.minutes}m ${timeLeft.seconds}s`
+      : "Send Resign Letter!";
 
-    return (
-        <group>
-            <Text font={src} position={[0, 0, -0.1]} fontSize={0.2} {...textOption}>
-                {/* {timerText} */}
-                Event has Ended
-            </Text>
-        </group>
-    );
-}
-
-function Mesh({ data }) {
-    // Define default material props
-    const defaultMaterialProps = {
-        thickness: 0.075,
-        ior: 1.8,
-        chromaticAberration: 0.5,
-        resolution: 800,
-    };
-
-    return (
-        <Float>
-            <mesh {...data}>
-                <MeshTransmissionMaterial
-                    roughness={0}
-                    transmission={0.99}
-                    {...defaultMaterialProps} // Apply default props
-                />
-            </mesh>
-        </Float>
-    );
+  return (
+    <group>
+      <Text font={src} position={[0, 0.3, -0.1]} fontSize={0.03} {...textOption}>
+        TIME  LEFT  TO  QUIT  CORPORATE
+      </Text>
+      <Text font={src} position={[0, 0, -0.1]} fontSize={0.2} {...textOption}>
+        {timerText}
+      </Text>
+    </group>
+  );
 }
